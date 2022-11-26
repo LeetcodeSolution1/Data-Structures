@@ -16,8 +16,10 @@ class Queue:
         return self.queue[0]
 
     def print(self):
+        print("---------Printing Queue------------")
         for item in self.queue:
             print(item)
+        print("")
 
 
 if(__name__ == "__main__"):
@@ -25,5 +27,11 @@ if(__name__ == "__main__"):
     queue.enqueue(1)
     queue.enqueue(2)
     queue.enqueue(3)
+
     queue.print()
-    print(queue.dequeue())
+
+    print("Dequeue function: ", queue.dequeue())
+
+    print("Peek function: ", queue.peek())
+
+    queue.print()
